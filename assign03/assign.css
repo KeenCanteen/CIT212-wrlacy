@@ -1,0 +1,28 @@
+/*Block comments written like this*/
+
+/*Only styles in external css*/
+
+body{font-family: serif;}
+
+	a {color: #BFEFFF;
+	text-decoration: none;
+	font-family: sans-serif;
+	}
+
+header{background-color: #002800;
+	background-image: url(logo.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	line-height:500%;
+	}
+h1{}
+h3{}
+
+footer{font-style: italic;
+	font-size: 80%;
+	text-align: center;
+	background-image: url(purdue.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	line-height: 400%;
+	}

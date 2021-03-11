@@ -1,0 +1,58 @@
+/*William Rhodes Lacy - Assignment 03*/
+
+body{background-color: #DFD1A7; 
+	color: #000000; 
+	font-family: Arial, Helvetica, sans-serif; 
+	}
+
+header{background-color: #9D2235; 
+	color: #FFFFFF; 
+	background-image: URL(jaguar.png);
+	background-size: 64px 64px;
+	background-position: right;
+	background-repeat: no-repeat;
+	line-height: 64px;
+	text-indent: 1em;
+	}
+
+nav{background-color: #7C1B2B; 
+	font-weight: bold; }
+
+nav a{text-decoration: none; 
+	font-style: italic;
+	color: #FFFFFF; }
+
+h1{margin-bottom: 0; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+	
+h1 a{text-decoration: none; 
+	color: #FFFFFF; }
+
+h2{color: #000000; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+
+h3{color: #000000; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+
+ul{list-style-image: URL(marker.gif); }
+
+dt{color: #002171; }
+
+footer{font-size: 75%; 
+	font-style: italic; 
+	text-align: center; 
+	font-family: Georgia, "Times New Roman", serif;
+	background-image: URL(iupui.png);
+	background-size: 2%;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	}
+	
+#address{font-size: 80%;}
+
+.picdesc{font-style: italic; 
+	color: #404040; 
+	font-size: 90%;}

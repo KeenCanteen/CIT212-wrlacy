@@ -3,7 +3,9 @@
 /*Only styles in external css*/
 
 body{font-family: serif;
-background-color: #101010;}
+	background-color: #101010;
+	color: #FFFFFF;
+}
 
 a {	color: #BFEFFF;
 	text-decoration: none;
@@ -14,7 +16,7 @@ header{background-color: #002800;
 	background-image: url(logo.png);
 	background-position: right;
 	background-repeat: no-repeat;
-	line-height:500%;
+	padding: 1em 0 0 5px;
 	}
 h1{
 	border-bottom: 5px dotted #FFFFFF;
@@ -27,13 +29,14 @@ footer{font-style: italic;
 	text-align: center;
 	background-image: url(purdue.png);
 	background-repeat: no-repeat;
-	background-position: right;
-	line-height: 400%;
+	background-position: center bottom;
+	line-height: 1em;
+	padding: 0 0 69px;
 	}
 
 section{
 	float: left;
-	width: 50%;
+	width: 33%;
 	padding-left: 2em;
 	padding-right: 2em;
 	}
@@ -45,10 +48,13 @@ section{
 	margin-right: auto; 
 	min-width: 960px;
 	max-width: 2048px; 
-	box-shadow: 3px 3px #333333;
-	border-width: 1px; 									
+	border-width: 2px; 									
 	border-style: solid;
-	border-color: #000033;
+	border-color: #222222;
 	background-image: linear-gradient(to bottom, #2B3154, #101010); 
 	background-repeat: no-repeat; 
 	}
+
+.clearleft{
+	clear: left;
+}

@@ -1,0 +1,151 @@
+/*William Rhodes Lacy - Assignment 03*/
+
+body{background-color: #EAEAEA; 						/*Modified Ch7 Hands On Practice*/
+	color: #666666; 
+	font-family: Arial, Helvetica, sans-serif; 
+	}
+
+header{background-color: #002171; 
+	color: #FFFFFF; 
+	text-align: center; 								/*Added Ch6 Hands On Practice*/
+	padding-top: 30px; 									/*Modified Ch7 Hands On Practice*/
+	padding-left: 3em;									/*Added Ch7 Hands On Practice*/
+	height: 120px;										/*Modified Ch7 Hands On Practice*/
+	}
+	
+header a:link{/*Added Ch7 Hands On Practice*/
+	text-decoration: none; 
+	color: #FFFFFF;
+	}
+
+header a:visited{/*Added Ch7 Hands On Practice*/
+	text-decoration: none; 
+	color: #FFFFFF;
+	}
+	
+header a:hover{/*Added Ch7 Hands On Practice*/
+	text-decoration: none; 
+	color: #90C7E3;
+	}
+
+nav{
+	font-weight: bold; 
+	padding: 1.5em;
+	font-size: 120%;	
+	float: left;
+	width: 160px;
+	}
+
+nav a{text-decoration: none; }
+
+nav ul{/*Added Ch7 Hands On Practice*/
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;
+	}
+	
+nav a:link{/*Added Ch7 Hands On Practice*/
+	color: #5C7FA3;
+	}
+
+nav a:visited{/*Added Ch7 Hands On Practice*/
+	color: #344873;
+	}
+	
+nav a:hover{/*Added Ch7 Hands On Practice*/
+	color: #A52A2A;
+	}
+
+main{/*Added Ch6 Hands On Practice*/
+	padding: 1px 20px 20px 30px;						/*Modified Ch7 Hands On Practice*/
+	display: block;
+	margin-left: 190px;									/*Added Ch7 Hands On Practice*/
+	background-color: #FFFFFF; 
+	overflow: auto;
+	}
+
+h1{margin-bottom: 0; 
+	font-family: Georgia, "Times New Roman", serif; 
+	margin-top: 0px; 									/*Added Ch6 Hands On Practice*/
+	font-size: 3em; 									/*Added Ch7 Hands On Practice*/
+	letter-spacing: 0.25em;
+	}
+
+h2{color: #1976D2; 
+	font-family: Georgia, "Times New Roman", serif; 
+	text-shadow: 1px 1px #CCCCCC;						/*Added Ch6 Hands On Practice*/
+	}
+
+h3{color: #000033; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+
+main ul{/*Modified Ch7 Hands On Practice*/
+	list-style-image: URL(marker.gif); 
+	}
+
+dt{color: #002171; }
+
+.resort{color: #1976D2; 
+	font-weight: bold; 
+	}
+
+footer{font-size: 75%; 
+	font-style: italic; 
+	text-align: center; 
+	font-family: Georgia, "Times New Roman", serif;
+	padding: 2em; 										/*Added Ch6 Hands On Practice*/
+	margin-left: 190px;									/*Added Ch7 Hands On Practice*/
+	background-color: #FFFFFF; 
+	}
+	
+#contact{font-size: 90%;}
+
+#wrapper{												/*Added Ch6 Hands On Practice*/
+	background-color: #90C7E3;
+	width: 80%;	
+	margin-left: auto;
+	margin-right: auto; 
+	min-width: 960px;
+	max-width: 2048px; 
+	box-shadow: 3px 3px #333333;
+	border-width: 1px; 									/*Added Ch7 Hands On Practice*/
+	border-style: solid;
+	border-color: #000033;
+	background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); 
+	background-repeat: no-repeat; 
+	}
+
+#homehero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(coast2.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 190px;									/*Added Ch7 Hands On Practice*/
+	}
+	
+#yurthero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(yurt.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 190px;									/*Added Ch7 Hands On Practice*/
+	}
+	
+#trailhero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(trail.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 190px;									/*Added Ch7 Hands On Practice*/
+	}
+	
+* { box-sizing: border-box; } 							/*Added Ch7 Hands On Practice*/
+
+section{/*Added Ch7 Hands On Practice*/
+	float: left;
+	width: 33%;
+	padding-left: 2em;
+	padding-right: 2em;
+	}

@@ -1,0 +1,93 @@
+/*William Rhodes Lacy - Assignment 03*/
+
+body{background-color: #90C7E3; 
+	color: #666666; 
+	font-family: Arial, Helvetica, sans-serif; 
+	background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); 	/*Added Ch6 Hands On Practice*/
+	background-repeat: no-repeat; 
+	}
+
+header{background-color: #002171; 
+	color: #FFFFFF; 
+	background-image: URL(sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	text-align: center; 								/*Added Ch6 Hands On Practice*/
+	padding-top: 15px; 
+	height: 60px
+	}
+
+nav{background-color: #FFFFFF; 							/*Modified Ch6 Hands On Practice*/
+	font-weight: bold; 
+	text-align: center; 								/*Added Ch6 Hands On Practice*/
+	padding: 1px; 
+	}
+
+nav a{text-decoration: none; }
+
+main{/*Added Ch6 Hands On Practice*/
+	padding: 1px 20px 20px;
+	display: block;
+	}
+
+h1{margin-bottom: 0; 
+	font-family: Georgia, "Times New Roman", serif; 
+	margin-top: 0px; 									/*Added Ch6 Hands On Practice*/
+	}
+
+h2{color: #1976D2; 
+	font-family: Georgia, "Times New Roman", serif; 
+	text-shadow: 1px 1px #CCCCCC;						/*Added Ch6 Hands On Practice*/
+	}
+
+h3{color: #000033; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+
+ul{list-style-image: URL(marker.gif); }
+
+dt{color: #002171; }
+
+.resort{color: #1976D2; 
+	font-weight: bold; 
+	}
+
+footer{font-size: 75%; 
+	font-style: italic; 
+	text-align: center; 
+	font-family: Georgia, "Times New Roman", serif;
+	padding: 2em; 										/*Added Ch6 Hands On Practice*/
+	}
+	
+#contact{font-size: 90%;}
+
+#wrapper{												/*Added Ch6 Hands On Practice*/
+	background-color: #FFFFFF;
+	width: 80%;	
+	margin-left: auto;
+	margin-right: auto; 
+	min-width: 960px;
+	max-width: 2048px; 
+	box-shadow: 3px 3px #333333;
+	}
+
+#homehero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(coast.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+	
+#yurthero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(yurt.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+	
+#trailhero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(trail.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}

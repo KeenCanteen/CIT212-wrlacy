@@ -11,6 +11,12 @@ a {	color: #BFEFFF;
 	text-decoration: none;
 	font-family: sans-serif;
 	}
+	
+main a:link{color: #BFEFFF;}
+
+main a:visited{color: #728F99;}
+
+main a:hover{color: #C46060;}
 
 header{background-color: #002800;
 	background-image: url(logo.png);
@@ -30,8 +36,8 @@ footer{font-style: italic;
 	background-image: url(purdue.png);
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	line-height: 1em;
-	padding: 0 0 69px;
+	background-size: auto 45%;
+	padding: 0 0 2em;
 	}
 
 section{
@@ -39,6 +45,10 @@ section{
 	width: 33%;
 	padding-left: 2em;
 	padding-right: 2em;
+	background-image: url(corner-tr.png), url(corner-br.png), url(corner-bl.png), url(corner-tl.png);
+	background-size: 5%;
+	background-repeat: no-repeat;
+	background-position: right top, right bottom, left bottom, left top;
 	}
 	
 #wrapper{												
@@ -51,10 +61,16 @@ section{
 	border-width: 2px; 									
 	border-style: solid;
 	border-color: #222222;
-	background-image: linear-gradient(to bottom, #2B3154, #101010); 
+	background-image: linear-gradient(to bottom, #001400, #101010); 
 	background-repeat: no-repeat; 
 	}
 
 .clearleft{
 	clear: left;
+}
+
+#rightphoto{
+	float: right;
+	width: 10%;
+	padding: 0 5px 0 0;
 }

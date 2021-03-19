@@ -2,9 +2,10 @@
 
 /*Only styles in external css*/
 
-body{font-family: serif;}
+body{font-family: serif;
+background-color: #101010;}
 
-	a {color: #BFEFFF;
+a {	color: #BFEFFF;
 	text-decoration: none;
 	font-family: sans-serif;
 	}
@@ -15,7 +16,10 @@ header{background-color: #002800;
 	background-repeat: no-repeat;
 	line-height:500%;
 	}
-h1{}
+h1{
+	border-bottom: 5px dotted #FFFFFF;
+	}
+	
 h3{}
 
 footer{font-style: italic;
@@ -25,4 +29,26 @@ footer{font-style: italic;
 	background-repeat: no-repeat;
 	background-position: right;
 	line-height: 400%;
+	}
+
+section{
+	float: left;
+	width: 50%;
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+	
+#wrapper{												
+	background-color: #90C7E3;
+	width: 80%;	
+	margin-left: auto;
+	margin-right: auto; 
+	min-width: 960px;
+	max-width: 2048px; 
+	box-shadow: 3px 3px #333333;
+	border-width: 1px; 									
+	border-style: solid;
+	border-color: #000033;
+	background-image: linear-gradient(to bottom, #2B3154, #101010); 
+	background-repeat: no-repeat; 
 	}

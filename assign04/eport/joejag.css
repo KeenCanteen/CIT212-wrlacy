@@ -1,0 +1,150 @@
+/*William Rhodes Lacy - Assignment 03*/
+
+body{background-color: #A09578;
+	color: #000000; 
+	font-family: Arial, Helvetica, sans-serif; 
+	}
+
+header{background-color: #9D2235; 
+	color: #FFFFFF; 
+	background-image: URL(jaguar.png);
+	background-size: 64px 64px;
+	background-position: right;
+	background-repeat: no-repeat;
+	line-height: 64px;
+	text-indent: 1em;
+	/*margin:1px;*/
+	
+	}
+
+nav{background-color: #9D2235;
+	font-weight: bold; 
+	padding: 1.5em;
+	font-size: 120%;	
+	float: left;
+	width: 100px;
+	height: 50%; 
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 5px solid #7C1B2B;
+	border-radius: 15px;
+	}
+
+
+nav a{text-decoration: none; 
+	font-style: italic;
+	color: #FFFFFF; }
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;
+	}	
+nav a:link{
+	color: #FFFFFF;
+	}
+nav a:visited{
+	color: #CCAE9D;
+	}	
+nav a:hover{
+	color: #FFEC8E;
+	}
+
+main{
+	padding: 1px 5px 5px 1px;			
+	display: block;
+	margin-left: 100px;		
+	/*background-color: #FFFFFF; */
+	overflow: auto;
+	}
+
+h1{margin-bottom: 0; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+	
+h1 a{text-decoration: none; 
+	color: #FFFFFF; }
+
+h2{color: #000000; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+
+h3{color: #000000; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+
+/*p{	padding:5px;
+	}*/
+
+ul{list-style-image: URL(marker.gif); }
+
+dt{color: #002171; }
+
+footer{font-size: 75%; 
+	font-style: italic; 
+	text-align: center; 
+	font-family: Georgia, "Times New Roman", serif;
+	/*background-image: URL(iupui.png);
+	background-size: 4%;
+	background-position: center bottom;
+	background-repeat: no-repeat;*/
+	margin-left: 100px;
+	padding-bottom:1em;
+	}
+	
+#iupuilogo{
+	height: 1.5em;
+	background-image: URL(iupui.png);
+	background-size: contain;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	margin: 2px;
+	}
+	
+#address{font-size: 80%;}
+
+.picdesc{font-style: italic; 
+	color: #404040; 
+	font-size: 90%;
+	text-align: left;}
+
+#wrapper{												
+	background-color: #DFD1A7; 
+	width: 80%;	
+	margin-left: auto;
+	margin-right: auto; 
+	min-width: 960px;
+	max-width: 2048px; 
+	box-shadow: 3px 3px #440000;
+	border-width: 1px; 									
+	border-style: solid;
+	border-color: #000033;
+	background-image: linear-gradient(to bottom, #FFFFFF, #DFD1A7); 
+	background-repeat: no-repeat; 
+	}
+
+#campuspic{/*Picture of Campus*/
+	height: 200px;
+	background-image: URL(campus.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;						
+	}
+
+#jaguarpic{/*Picture of Campus*/
+	height: 300px;
+	background-image: URL(jaguar.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;	
+	border: 4px solid #000000;
+	margin: 9px;
+	border-radius:15px; /*If it didn't clash with the existing squircles, an elliptical border would look quite nice*/
+	}
+
+section{/*Added Ch7 Hands On Practice*/
+	float: left;
+	width: 45%;
+	padding-left: 1em;
+	padding-right: 1em;
+	}

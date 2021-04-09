@@ -1,0 +1,61 @@
+/*Block comments written like this*/
+
+/*Only styles in external css*/
+
+body{font-family: serif;
+	background-color: #101010;
+	color: #FFFFFF;
+}
+
+a {	color: #BFEFFF;
+	text-decoration: none;
+	font-family: sans-serif;
+	}
+	
+main a:link{color: #BFEFFF;}
+
+main a:visited{color: #728F99;}
+
+main a:hover{color: #C46060;}
+
+header{background-color: #002800;
+	background-repeat: no-repeat;
+	padding: 1em 0 0 5px;
+	}
+h1{
+	border-bottom: 5px dotted #FFFFFF;
+	}
+	
+h3{}
+
+footer{font-style: italic;
+	font-size: 80%;
+	text-align: center;
+	}
+
+section{
+	width: 33%;
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+	
+#wrapper{	
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	background-color: #90C7E3;
+	width: 80%;	
+	margin-left: auto;
+	margin-right: auto; 
+	min-width: 960px;
+	max-width: 2048px; 
+	border-width: 2px; 									
+	border-style: solid;
+	border-color: #222222;
+	background-image: linear-gradient(to bottom, #001400, #101010); 
+	background-repeat: no-repeat; 
+	}
+
+.clearleft{
+	clear: left;
+}

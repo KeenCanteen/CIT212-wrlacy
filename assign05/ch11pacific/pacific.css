@@ -1,0 +1,254 @@
+/*William Rhodes Lacy - Assignment 03*/
+
+body{background-color: #EAEAEA; 						/*Modified Ch7 Hands On Practice*/
+	color: #666666; 
+	font-family: Arial, Helvetica, sans-serif; 
+	}
+
+header{background-color: #002171; 
+	color: #FFFFFF; 
+	text-align: center; 								/*Added Ch6 Hands On Practice*/
+	}
+	
+header a:link{/*Added Ch7 Hands On Practice*/
+	text-decoration: none; 
+	color: #FFFFFF;
+	}
+
+header a:visited{/*Added Ch7 Hands On Practice*/
+	text-decoration: none; 
+	color: #FFFFFF;
+	}
+	
+header a:hover{/*Added Ch7 Hands On Practice*/
+	text-decoration: none; 
+	color: #90C7E3;
+	}
+
+nav{
+	font-weight: bold; 
+	padding: 0;
+	font-size: 120%;	
+	text-align: center; 
+	}
+
+nav a{
+	text-decoration: none; 
+	transition: color 3s ease;
+	}
+
+nav ul{/*Added Ch7 Hands On Practice*/
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;
+	}
+	
+nav li{
+	border-bottom: solid;
+	border-bottom-color: #000033;
+	border-bottom-width: 1px;
+	}
+
+nav a:link{/*Added Ch7 Hands On Practice*/
+	color: #5C7FA3;
+	}
+
+nav a:visited{/*Added Ch7 Hands On Practice*/
+	color: #344873;
+	}
+	
+nav a:hover{/*Added Ch7 Hands On Practice*/
+	color: #A52A2A;
+	}
+
+main{/*Added Ch6 Hands On Practice*/
+	padding: 1px 20px 20px 30px;						/*Modified Ch7 Hands On Practice*/
+	display: block;
+	background-color: #FFFFFF; 
+	overflow: auto;
+	}
+
+h1{margin-bottom: 0; 
+	font-family: Georgia, "Times New Roman", serif; 
+	margin-top: 0px; 									/*Added Ch6 Hands On Practice*/
+	letter-spacing: 0.25em;
+	padding: 0.5em 0em;
+	}
+
+h2{color: #1976D2; 
+	font-family: Georgia, "Times New Roman", serif; 
+	text-shadow: 1px 1px #CCCCCC;						/*Added Ch6 Hands On Practice*/
+	}
+
+h3{color: #000033; 
+	font-family: Georgia, "Times New Roman", serif; 
+	}
+
+main ul{/*Modified Ch7 Hands On Practice*/
+	list-style-image: URL(marker.gif); 
+	}
+
+dt{color: #002171; }
+
+.resort{color: #1976D2; 
+	font-weight: bold; 
+	}
+
+footer{font-size: 75%; 
+	font-style: italic; 
+	text-align: center; 
+	font-family: Georgia, "Times New Roman", serif;
+	padding: 2em; 										/*Added Ch6 Hands On Practice*/
+	background-color: #FFFFFF; 
+	}
+	
+#contact{font-size: 90%;}
+
+#wrapper{												/*Added Ch6 Hands On Practice*/
+	background-color: #90C7E3;
+	background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); 
+	background-repeat: no-repeat; 
+	}
+
+#homehero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(coast2.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+	
+#yurthero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(yurt.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+	
+#trailhero{/*Added Ch6 Hands On Practice*/
+	height: 300px;
+	background-image: URL(trail.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+	
+* { box-sizing: border-box; } 							/*Added Ch7 Hands On Practice*/
+
+table{
+	border: 2px solid #3399CC;
+	border-collapse: collapse;
+}
+td,th{
+	padding: 0.5em;
+	border: 2px solid #3399CC;
+}
+td{
+	text-align: center;
+}
+.text{
+	text-alight: left;
+}
+
+tr:nth-of-type(odd){
+	background-color: #F5FAFC;
+}
+
+form{
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+input, textarea{
+	margin-bottom: 0.5em;
+}
+
+video, embed{
+	float:right;
+	padding-left: 20px;
+}
+
+/*===MEDIUM WINDOWS===*/
+@media (min-width: 600px){
+	nav ul{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	nav li{
+		border-bottom: none;
+	}
+	
+	section{
+		padding: 0em 2em;
+	}
+	
+
+	 .content main{
+		display: grid;               
+		grid-template-rows: auto;              
+		grid-template-columns: 1fr 1fr 1fr; 
+	 }
+	 h2			{grid-row: 1 / 2; grid-column: 1 / 5;}
+	 section 	{grid-row: 2 / 3; grid-column: auto;}
+	 #special	{grid-row: auto; grid-column: 1 / 5;}
+	 footer		{grid-row: auto; grid-column: 1 / 5;}
+}
+
+form{
+	width: 60%;
+	display: grid;
+	grid-template-columns: 6em 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 1em;
+}
+
+input[type="submit"]{
+	grid-column: 2/3;
+	width: 9em;
+}
+	
+
+/*===LARGE WINDOWS==*/
+
+@media (min-width: 1024px){  
+	nav ul{ 
+		display: flex;       
+		flex-flow: column;   
+		padding-top: 1em; 
+	} 
+	nav{ 
+		text-align: left;       
+		padding-left: 1em;
+	} 
+	#wrapper{
+		display: grid;
+		grid-template-columns: 180px auto;
+		grid-template-rows: auto;
+		margin: auto;             
+		width: 80%;
+		border: 1px solid #000033; 
+		box-shadow: 1px 1px #000033; 
+		}
+	header{ 
+		grid-row: 1 / 2; 
+		grid-column: 1 / 3; 
+		} 
+	nav{ 
+		grid-row: 2 / 5; 
+		grid-column: 1 / 2; 
+		} 
+	div{ 
+		grid-row: 2 / 3; 
+		grid-column: 2 / 3; 
+	} 
+	main{
+		grid-row: 3 / 4; 
+		grid-column: 2 / 3; 
+	} 
+	footer{ 
+		grid-row: 4 / 5; 
+		grid-column: 2 / 3; 
+	}
+}

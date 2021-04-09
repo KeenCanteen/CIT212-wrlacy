@@ -10,11 +10,12 @@ body{font-family: serif;
 a {	color: #BFEFFF;
 	text-decoration: none;
 	font-family: sans-serif;
+	text-align: center;
 	}
 	
-main a:link{color: #BFEFFF;}
+main a:link{color: #728F99;}
 
-main a:visited{color: #728F99;}
+main a:visited{color: #BFEFFF;}
 
 main a:hover{color: #C46060;}
 
@@ -34,28 +35,90 @@ footer{font-style: italic;
 	}
 
 section{
-	width: 33%;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: .5em;
+	padding-right: .5em;
+	margin-bottom:	1em;
 	}
+
+.entry{
+	border: 2px solid #000000;
+	border-radius: 10px;
+	padding: 2em 3px 3px;
+	text-align: center;
+	width: 10em;
+	height: 4em;
+	font-weight: bold;
+	margin: 1px;
+}
+
+.gallery{
+	display: flex;
+	flex-flow: row	wrap;
+	justify-content: left;
+	
+}
 	
 #wrapper{	
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
 	background-color: #90C7E3;
-	width: 80%;	
 	margin-left: auto;
 	margin-right: auto; 
-	min-width: 960px;
-	max-width: 2048px; 
 	border-width: 2px; 									
 	border-style: solid;
 	border-color: #222222;
-	background-image: linear-gradient(to bottom, #001400, #101010); 
+	background-image: linear-gradient(to bottom, #002800, #101010); 
 	background-repeat: no-repeat; 
 	}
 
-.clearleft{
-	clear: left;
+#timer{
+	display:none;
+	}
+
+/*===MEDIUM WINDOWS===*/
+@media (min-width: 600px){
+	#wrapper{
+		display:grid;
+		grid-template-rows: auto;              
+		grid-template-columns: 1fr 1fr;
+	}
+	header{
+		grid-row: auto;
+		grid-column: 1 / -1;
+	}
+	main{
+		grid-row: auto;
+		grid-column: -3 / -1;
+		display:grid;
+		grid-template-rows: auto;              
+		grid-template-columns: 1fr 1fr;
+	}
+	#assignments{
+		grid-row: auto; 
+		grid-column: 1 / 2;
+	}
+	#homework{
+		grid-row: auto; 
+		grid-column: 2 / 3;
+	}
+	footer{
+		grid-row: auto;
+		grid-column: 1 /-1;
+	}
+
+}
+
+/*===LARGE WINDOWS===*/
+@media (min-width: 1024px){  
+	#wrapper{
+		display:grid;
+		grid-template-rows: auto;              
+		grid-template-columns: 100px 1fr 1fr;
+	}
+	#timer{
+		display: block;
+		grid-row: auto;
+		grid-column: 1 /2;
+	}
 }

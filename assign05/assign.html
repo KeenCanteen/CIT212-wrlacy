@@ -5,45 +5,73 @@
 <title>W. Rhodes Lacy Assignment Sheet</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="assign.css">
+
+<script>
+function startTime(sec) {
+  sec += 1;
+  document.getElementById("timer").innerHTML = sec2time(sec);
+  var t = setTimeout(startTime, 1000, sec);
+}
+function sec2time(i){
+  //return("A")
+  s = i % 60;
+  //return("B")
+  m = ((i-s)/60)%60;
+  //return("C");
+  h = ((i-s-60*m)/3600);
+  //return("D")
+  //return(s);
+  return(h + ":" + checkTime(m) + ":" + checkTime(s));
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+</script>
+
+
 </head>
 
-<body>
+<body onload="startTime(0)">
 <div id="wrapper">
 <header><a href="assign.html"><h1>William Rhodes Lacy</h1></a></header>
 
+<div id="timer"></div>
+
 <main>
 
-<section>
+<section id="assignments">
 <h2>Assignments</h2>
 
 <div class="gallery">
-<div class="entry"><a href="ul.html">Hands on Practice 2.7 &mdash; ul.html</a></div>
-<div class="entry"><a href="design.html">Hands on Practice 2.9 &mdash; design.html</a></div>
-<div class="entry"><a href="mypractice/index.html">Hands on Practice 2.16 &mdash; mypractice/index.html</a></div>
+<div class="entry"><a href="ul.html">Hands on Practice 2.7 </a></div>
+<div class="entry"><a href="design.html">Hands on Practice 2.9 </a></div>
+<div class="entry"><a href="mypractice/index.html">Hands on Practice 2.16</a></div>
 <div class="entry"><a href="eport/index.html">Joe Jaguar ePortfolio</a></div>
 </div>
 
 </section>
 
-<section>
+<section id="homework">
 <h2>Homework Case Studies</h2>
 
-<a href="pacific/index.html">Pacific Trails Resort Case Study</a>
-<a href="ch4pacific/index.html">Chapter 4 Pacific Case Study</a>
-<a href="ch5pacific/index.html">Chapter 5 Pacific Case Study</a>
-<a href="ch6pacific/index.html">Chapter 6 Pacific Case Study</a>
-<a href="ch7pacific/index.html">Chapter 7 Pacific Case Study</a>
-<a href="ch8pacific/index.html">Chapter 8 Pacific Case Study</a>
-<a href="ch9pacific/index.html">Chapter 9 Pacific Case Study</a>
-<a href="ch10pacific/index.html">Chapter 10 Pacific Case Study</a>
-<a href="ch11pacific/index.html">Chapter 11 Pacific Case Study</a>
+<div class="gallery">
+<div class="entry"><a href="pacific/index.html">Pacific Trails Resort Case Study</a></div>
+<div class="entry"><a href="ch4pacific/index.html">Chapter 4 Pacific Case Study</a></div>
+<div class="entry"><a href="ch5pacific/index.html">Chapter 5 Pacific Case Study</a></div>
+<div class="entry"><a href="ch6pacific/index.html">Chapter 6 Pacific Case Study</a></div>
+<div class="entry"><a href="ch7pacific/index.html">Chapter 7 Pacific Case Study</a></div>
+<div class="entry"><a href="ch8pacific/index.html">Chapter 8 Pacific Case Study</a></div>
+<div class="entry"><a href="ch9pacific/index.html">Chapter 9 Pacific Case Study</a></div>
+<div class="entry"><a href="ch10pacific/index.html">Chapter 10 Pacific Case Study</a></div>
+<div class="entry"><a href="ch11pacific/index.html">Chapter 11 Pacific Case Study</a></div>
+</div>
 
 </section>
 
 </main>
 
-
-<br class="clearleft">
 
 <!--New Assignments should be appended and separated by <hr>-->
 

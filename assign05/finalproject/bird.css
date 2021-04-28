@@ -130,11 +130,29 @@ footer{
 	flex-flow: column wrap;
 	padding: 0.5em;
 }
+#contact textarea{
+	margin-bottom: 4px;
+}
 
 /*===MEDIUM WINDOWS===*/
 @media (min-width: 600px) {
 
 
+#contact{
+	flex-flow: row wrap;
+	justify-content: center;	
+}
+#contact label{
+	flex-basis:20%;
+	margin: 2px;
+}
+#contact input{
+	flex-basis:70%;
+	margin: 2px;
+}
+#contact textarea{
+	flex-basis:70%;
+	margin: 2px;
 }
 
 /*===LARGE WINDOWS===*/
@@ -167,6 +185,20 @@ main{
 	align-items: center;
 	margin-left: 10px;
 
+}
+
+#contact{
+	justify-content: space-between;	
+}
+#contact label{
+	flex-basis:15%;
+	
+}
+#contact input{
+	flex-basis:33%;
+}
+#contact textarea{
+	flex-basis:48%;
 }
 
 }

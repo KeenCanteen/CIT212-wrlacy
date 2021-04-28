@@ -1,0 +1,101 @@
+/*Global variables*/
+:root{
+	--colorHeader: #47833E;
+	--colorNav: #3B3C3B;
+	--colorPage: #B7E2B0;
+	--colorFooter: #47833E;
+}
+
+html{
+	font-family: Arial;
+	background-color: var(--colorPage);
+}
+
+/*=== Flex Setup ===*/
+.flexContainer{
+	display: flex;
+}
+#topFlex{
+	flex-direction: column;
+}
+
+
+/*=== Header formatting ===*/
+header{
+	background-color: var(--colorHeader);
+	padding: 0px 1em;
+}
+header a{
+	color: #000000;
+	text-decoration: none;
+}
+header #logo{
+	background-image: url("images/logo.png");
+}
+
+
+/*=== nav formating ===*/
+nav{
+	background-color: var(--colorNav);
+	color: #FFFFFF;
+}
+nav a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+nav a:visited{
+	color: #999999;
+}
+nav a:hover{
+	/*Must be LAST psuedoclass*/
+	color: #CC5500;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+}
+.drop li{
+	display: none;
+	psotion: absolute;
+	z-index: 1;
+}
+.drop{
+	position: relative;
+	display: block;
+}
+.drop:hover li{
+	display: block;
+}
+	
+
+
+/*=== Main Formatting ===*/
+main{
+	display:flex;
+	flex-flow: column nowrap;
+}
+
+footer{
+	background-color: var(--colorFooter);
+	text-align: center;
+	font-size: 75%;
+}
+
+.blirb{
+	border: 2px solid #000000;
+	border-radius: 10px;
+	padding: .25em 1em;
+	margin: 5px 10px;
+	background-color: #FFFFFF;
+}
+
+/*===MEDIUM WINDOWS===*/
+@media (min-width: 600px){
+
+
+}
+
+/*===LARGE WINDOWS===*/
+@media (min-width: 1024px){  
+
+}

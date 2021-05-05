@@ -31,17 +31,25 @@ header{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: 10px 10px;
+	justify-content: flex-start;
+	margin: 10px 0;
+	width: 100%;
 }
 header a{
 	color: #000000;
 	text-decoration: none;
+	width:100%;
 }
 header h1{
 	background-color: var(--colorHeader);
-	padding: .25em 2em;
+	padding: .25em 1em;
 	margin: 10px 0px;
-	width: 100%;
+	text-align: left;
+}
+header #spacer{
+	background-color: var(--colorHeader);
+	width: 32px;
+	height: 3.5em;
 }
 #logo{
 	background-image: url("images/logo.png");

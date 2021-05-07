@@ -6,6 +6,10 @@
 	--colorNavBorder: #777777;
 	--colorPage: #B7E2B0;
 	--colorFooter: #47833E;
+	
+	/*Values:*/
+	--hFontSize: 32px;
+	--navFontSize: 24px;
 }
 
 html{
@@ -30,21 +34,23 @@ body{
 header{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: stretch;
 	justify-content: flex-start;
-	margin: 10px 0;
 	width: 100%;
+	
 }
 header a{
 	color: #000000;
 	text-decoration: none;
 	width:100%;
+	
 }
 header h1{
 	background-color: var(--colorHeader);
-	padding: .25em 1em;
-	margin: 10px 0px;
+	padding: .25em;
+	margin: 48px 0 40px;
 	text-align: left;
+	font-size: var(--hFontSize);
 }
 header #spacer{
 	background-color: var(--colorHeader);
@@ -59,9 +65,29 @@ header #spacer{
 	background-position: center;
 	background-size: cover;
 	border: 2px solid black;
+	align-self: center;
+	
+	/*z-index: 1;
+	position: absolute;
+	top: 10px;
+	left: 10px;*/
+}
+#logo img{
+	width: 128px;
+	height: 128px;
 }
 
-
+header button{
+	padding: .25em .5em;
+	align-self: center;
+	background-color: var(--colorHeader);
+	font-size: var(--hFontSize);
+	border: none;
+	cursor: pointer;
+}
+header button h1{
+	margin: 0;
+}
 /*=== nav formating ===*/
 nav{
 	background-color: var(--colorNav);
@@ -70,26 +96,27 @@ nav{
 nav a{
 	color: #FFFFFF;
 	text-decoration: none;
+	display: block;
+	transition: 0.3s;
 
 }
 nav a:visited{
 	color: #999999;
 }
-nav a:hover{
-	/*Must be LAST psuedoclass*/
-	color: #CC5500;
-}
+
 nav ul{
 	list-style-type: none;
 	margin: 0;
 	padding: .2em 0;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: space-around;
 }
 nav ul li{
-	border: 2px solid var(--colorNavBorder);
-	padding: .1em .25em;
+	/*border: 2px solid var(--colorNavBorder);*/
+	padding: .25em 1em;
+	font-size: var(--navFontSize);
+	
 }
 .drop{
 	position: relative;
@@ -108,8 +135,33 @@ nav ul li{
 	padding: .1em .2em;
 }
 
-	
+nav .closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+}
 
+.sidePanel{
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+	
+nav a:hover{
+	/*Must be LAST psuedoclass*/
+	color: #CC5500;
+}
+nav ul li a:hover{
+	/*Must be LAST psuedoclass*/
+	color: #CC5500;
+}
 
 /*=== Main Formatting ===*/
 main{

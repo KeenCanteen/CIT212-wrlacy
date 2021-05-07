@@ -8,18 +8,29 @@
 <link rel="stylesheet" href="bird.css">
 </head>
 
+<!--Scripts-->
+<script>
+function openNav() {
+  document.getElementById("sidePanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sidePanel").style.width = "0";
+}
+</script>
 
 <!--Header-->
 <header>
-<div id="spacer"></div>
-<div id="logo"></div>
+<button class="openbtn" onclick="openNav()">☰</button>
+<div id="logo"><img src="images/logo.png" alt="Over Birdened logo"></div>
 <a href="index.html"><h1>Over Birdened</h1></a>
 </header>
 
 <!--Navigation Panel-->
 <div class="flexContainer" id="topFlex">
-	<nav>
+	<nav id="sidePanel" class="sidePanel">
 		<ul>
+		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
 		<li><a href="index.html">About</a></li>
 		<li class="drop"><a href="">Bird Gallery</a>
 			<ul>
@@ -33,6 +44,7 @@
 		<li><a href="nbvisit.html">Non-Bird Visitors</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		</ul>
+	
 	</nav>
 
 

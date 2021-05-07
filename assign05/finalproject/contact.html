@@ -9,18 +9,33 @@
 </head>
 
 
+<!--Scripts-->
+<script>
+function openNav() {
+  var element = document.getElementById("sidePanel");
+	element.classList.toggle("sidePanel");
+}
+
+function closeNav() {
+	var element = document.getElementById("sidePanel");
+	element.classList.toggle("sidePanel");
+}
+</script>
+
 <!--Header-->
 <header>
-<div id="logo"></div>
-<a href="index.html"><h1>Over Birdened > Contact</h1></a>
+<button class="openbtn" onclick="openNav()">☰</button>
+<div id="logo"><img src="images/logo.png" alt="Over Birdened logo"></div>
+<a href="index.html"><h1>Over Birdened</h1></a>
 </header>
 
 <!--Navigation Panel-->
 <div class="flexContainer" id="topFlex">
 	<nav id="sidePanel" class="sidePanel">
 		<ul>
+		<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
 		<li><a href="index.html">About</a></li>
-		<li class="drop"><a href="">Bird Gallery</a>
+		<li class="drop"><a href="birdsMain.html">Bird Gallery</a>
 			<ul>
 			<li><a href="birdsbw.html">Black &amp; White Birds</a></li>
 			<li><a href="birdsgy.html">Grey Birds</a></li>
@@ -32,6 +47,7 @@
 		<li><a href="nbvisit.html">Non-Bird Visitors</a></li>
 		<li><a href="contact.html">Contact</a></li>
 		</ul>
+	
 	</nav>
 
 

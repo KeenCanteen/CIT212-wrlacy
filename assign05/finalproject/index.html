@@ -15,7 +15,11 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("sidePanel").style.width = "0";
+	if(window.innerWidth < 1024){
+		document.getElementById("sidePanel").style.width = "0";
+	} else {
+	document.getElementById("sidePanel").style.width = "250px";
+	}
 }
 </script>
 

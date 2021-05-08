@@ -8,19 +8,7 @@
 <link rel="stylesheet" href="bird.css">
 </head>
 
-<!--Scripts-->
-<script>
-function openNav() {
-  var element = document.getElementById("sidePanel");
-	element.classList.toggle("sidePanel");
-}
-
-function closeNav() {
-	var element = document.getElementById("sidePanel");
-	element.classList.toggle("sidePanel");
-}
-</script>
-
+<body>
 <!--Header-->
 <header>
 <button class="openbtn" onclick="openNav()">☰</button>
@@ -55,12 +43,14 @@ function closeNav() {
 
 		<h2>Welcome to Over Birdened!</h2>
 
-		<div class="blirb" id="home">
+		<div class="blirb">
+			<div class="home">
 		<h3>We're excited to show you our birds!</h3>
 		<p>
 		Here at <i>Over Birdened</i> we cherish the time we get to spend watching birds. 
 		<br><br>
 		Please note that birds are not the best photo models and will often move before a good picture can be taken or sound recorded. Not all birds will have a picture and/or sound clip associated with them.</p>
+		</div>
 		</div>
 
 	</main>
@@ -69,6 +59,19 @@ function closeNav() {
 <footer>
 CIT 212 - Web Design<br>W. Rhodes Lacy - 2021
 </footer>
+
+<!--Scripts-->
+<script>
+function openNav() {
+  var element = document.getElementById("sidePanel");
+	element.classList.toggle("sidePanel");
+}
+
+function closeNav() {
+	var element = document.getElementById("sidePanel");
+	element.classList.toggle("sidePanel");
+}
+</script>
 
 </body>
 </html>

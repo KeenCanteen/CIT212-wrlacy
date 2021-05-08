@@ -8,18 +8,7 @@
 <link rel="stylesheet" href="bird.css">
 </head>
 
-<!--Scripts-->
-<script>
-function openNav() {
-  var element = document.getElementById("sidePanel");
-	element.classList.toggle("sidePanel");
-}
-
-function closeNav() {
-	var element = document.getElementById("sidePanel");
-	element.classList.toggle("sidePanel");
-}
-</script>
+<body>
 
 <!--Header-->
 <header>
@@ -53,9 +42,10 @@ function closeNav() {
 <!--Main Body-->
 	<main>
 
-		<div class="blirb" id="feeder">
+		<div class="blirb">
+		<div class="feeder">
 		<h3>Stained Glass Feeder</h3>
-		<div class="feedPic"><img src="images/feedStainGlass.png" alt="The stained glass bird feeder."></div>
+		<div class="feedPic"><img src="images/feedStainGlass.jpg" alt="The stained glass bird feeder."></div>
 
 		<p>
 			<strong>Menu:</strong>
@@ -68,6 +58,26 @@ function closeNav() {
 			<br>
 		</p>
 		</div>
+		</div>
+		
+		<div class="blirb">
+			<div class="feeder">
+				<h3>Stand Up Feeder</h3>
+				<div class="feedPic"><img src="images/feedStand.png" alt="The stand up bird feed/squirrel buffet."></div>
+			
+
+		<p>
+			<strong>Menu:</strong>
+			<br>
+			Mixed birdseed, fruit, nuts, birds
+			<br>
+			<strong>Notes:</strong>
+			<br>
+			A high capacity feeder, but plagued by squirrels. Location of bird on bird violence.
+			<br>
+		</p>
+		</div>
+		</div>
 
 	</main>
 </div>
@@ -75,6 +85,19 @@ function closeNav() {
 <footer>
 CIT 212 - Web Design<br>W. Rhodes Lacy - 2021
 </footer>
+
+<!--Scripts-->
+<script>
+function openNav() {
+  var element = document.getElementById("sidePanel");
+	element.classList.toggle("sidePanel");
+}
+
+function closeNav() {
+	var element = document.getElementById("sidePanel");
+	element.classList.toggle("sidePanel");
+}
+</script>
 
 </body>
 </html>
